@@ -1,0 +1,13 @@
+.container{
+    margin-left: 600px;
+    margin-top: 50px;
+    display: flex ;
+}
+
+.h1{
+    position: relative;
+    justify-content: center;
+    display: flex;
+
+    margin-top: 50px;
+}

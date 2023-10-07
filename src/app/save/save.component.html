@@ -1,0 +1,48 @@
+<p>save works!</p>
+<div class="h1">
+    <h1>Register Employee</h1>
+</div>
+
+
+<!--REACTIVE FORM
+    <div class="container">
+    <form [formGroup]="register" (ngSubmit)="onreg()">
+        <label>Name:</label>
+        <input type="text" placeholder="Employee name" name="Name" formControlName="Name"><br><br>
+        <label>Position</label>
+        <input type="text" name="Position" formControlName="Position"><br><br>
+        <label>Select Level</label>
+        <select name="level" formControlName="Level">
+            <option value="intern">Intern</option>
+            <option value="fresher">Fresher</option>
+            <option value="experienced">Experienced</option>
+        </select><br><br>
+        <button>Add Employee</button>
+    </form>
+</div>
+
+-->
+
+<div class="container">
+    <form (submit)="SaveEmp()">
+
+        <label>NAME : </label><br>
+        <input type="text" name="Name" [(ngModel)]="newEmployee.Name"><br><br>
+    
+        <label>POSITION : </label><br>
+        <input type="text" name="Position" [(ngModel)]="newEmployee.Position"><br><br>
+    
+        <label>LEVEL : </label><br>
+        <select name="Level" [(ngModel)]="newEmployee.Level">
+            <option>Fresher</option>
+            <option>Experienced</option>
+        </select>  <br><br>
+
+        <div class="add">
+            <button type="button" class="btn btn-primary">SUBMIT</button>
+        </div>
+      
+    
+    
+    </form>
+</div>
